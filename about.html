@@ -1,4 +1,4 @@
-d<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>About Me</title>
@@ -39,11 +39,20 @@ d<!DOCTYPE html>
       max-width: 200px;
       border-radius: 50%;
     }
+    /* Custom styles for the navigation links */
+    .navbar-dark .navbar-nav .nav-link {
+      color: black;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .navbar-nav .nav-link.active {
+      color: #00538C;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Portfolio</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +64,7 @@ d<!DOCTYPE html>
           <a class="nav-link" href="index.html">Projects</a>
         </li>
         <li class="nav-item">
-         <b> <a class="nav-link active" href="about.html">About Me</a> </b>
+          <a class="nav-link active" href="about.html">About Me</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Nafisa_Humyra_Resume.pdf">Resume</a>
