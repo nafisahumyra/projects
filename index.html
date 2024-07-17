@@ -34,6 +34,7 @@
       color: #003366;
     }
     .project {
+      position: relative;
       padding-top: 50px;
       margin-bottom: 2rem;
       text-align: center;
@@ -43,14 +44,16 @@
     .project:hover {
       transform: scale(1.05);
     }
-    .project img {
+    .project img.thumbnail {
       width: 100%;
       height: 200px;
       object-fit: cover;
-      transition: opacity 0.2s;
+      transition: opacity 0.2s, transform 0.2s;
     }
-    .project:hover img {
+    .project:hover img.thumbnail {
       opacity: 0.7;
+      transform: scale(1.5);
+      z-index: 1;
     }
   </style>
 </head>
@@ -91,19 +94,19 @@
     <div class="col-sm-4">
       <div class="project" onclick="window.open('https://github.com/nafisahumyra/covert-channel-simulation', '_blank')">
         <h2>Covert Channel Research and Report</h2>
-        <img src="covert-channel-thumbnail.png" alt="Project 1 Image" style="height: 200px; width: 100%; object-fit: cover;">
+        <img src="covert-channel-thumbnail.png" alt="Project 1 Image" class="thumbnail">
       </div>
     </div>
     <div class="col-sm-4">
       <div class="project" onclick="window.open('TCP Attacks.pdf', '_blank')">
         <h2>TCP Attacks on VirtualBox</h2>
-        <img src="tcp.webp" alt="Project 2 Image">
+        <img src="tcp.webp" alt="Project 2 Image" class="thumbnail">
       </div>
     </div>
     <div class="col-sm-4">
       <div class="project" onclick="window.open('Squirrelmail.pdf', '_blank')">
         <h2>Secure Email Communication &amp; Traffic Monitoring</h2>
-        <img src="squirrelmail-img.jpeg" alt="Project 3 Image">
+        <img src="squirrelmail-img.jpeg" alt="Project 3 Image" class="thumbnail">
       </div>
     </div>
   </div>
@@ -111,7 +114,7 @@
     <div class="col-sm-4">
       <div class="project" onclick="window.open('Password Manager.pdf', '_blank')">
         <h2>Password Manager</h2>
-        <img src="picture3.jpg" alt="Project 4 Image">
+        <img src="picture3.jpg" alt="Project 4 Image" class="thumbnail">
       </div>
     </div>
   </div>
